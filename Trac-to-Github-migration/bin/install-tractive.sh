@@ -1,7 +1,7 @@
 #!/bin/bash
-
+tractive_env="/g/data/tm70/pcl851/envs/tractive"
 conda_env_tractive() {
-    my_conda_env='/g/data/tm70/pcl851/envs/tractive'
+    my_conda_env="$tractive_env"
     my_conda_setup="$("${my_conda_env}/bin/conda" 'shell.bash' 'hook' 2> /dev/null)"
     if [ $? -eq 0 ]; then
         eval "$my_conda_setup"
@@ -16,12 +16,14 @@ conda_env_tractive() {
 
 module use /g/data/hh5/public/modules
 module load conda/analysis3-23.07
-conda create -y --prefix /g/data/tm70/pcl851/envs/tractive conda
+conda create -y --prefix "$tractive_env" conda
 conda_env_tractive
-conda install -y conda -c conda-forge
+conda install -y -c conda-forge conda
 conda install -y ruby
-conda install -y reposurgeon -c dnachun
+conda install -y -c dnachun reposurgeon
 conda install -y pygithub -c conda-forge
+conda install -y -c conda-forge git-filter-repo
+conda install -y pyyaml
 conda install -y gcc_linux-64
 conda install -y gxx_linux-64
 gem install -q ruby
