@@ -1,0 +1,24 @@
+# Copyright 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details.
+# SPDX-License-Identifier: Apache-2.0
+
+#PBS -l ncpus=1
+#PBS -l mem=4GB
+#PBS -l jobfs=4GB
+#PBS -q normalbw
+#PBS -P tm70
+#PBS -l walltime=6:00:00
+#PBS -l storage=gdata/tm70
+#PBS -j oe
+
+source $HOME/.bashrc
+base="/g/data/tm70/pcl851/tractive/cable-trac-github"
+paths=$(cat "${base}/cable-git-large-files.largest.sorted.txt")
+log="${base}/logs/cable-git-filter-repo.log"
+
+conda_env_tractive
+cd "${base}/cable-git"
+for path in $paths; do 
+    echo "" >> $log
+    echo $path >> $log
+    git filter-repo --force --invert-paths --path $path 2>&1 >> $log
+done
