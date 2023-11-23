@@ -1,4 +1,7 @@
 #!/bin/bash
+# Copyright 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details.
+# SPDX-License-Identifier: Apache-2.0
+
 tractive_env="/g/data/tm70/pcl851/envs/tractive"
 conda_env_tractive() {
     my_conda_env="$tractive_env"
