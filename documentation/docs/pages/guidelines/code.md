@@ -162,4 +162,4 @@ TODO which tool(s) should be used for versioning ACCESS NRI repos?
 
 ## Copyright license
 
-https://github.com/ACCESS-NRI/template
+See the [licensing policy](../policies/licensing.md).

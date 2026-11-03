@@ -1,19 +1,5 @@
 ## Git
 
-## Repository creation and naming
-In the first instance, all repositories should be created using the ACCESS-NRI [General Repository Template](https://github.com/ACCESS-NRI/template) which contains the correct software COPYRIGHT and LICENSE information.
-Repositories should always have a `README.md` providing a description of the repo purpose, content and any useful links / references. The more detailed documentation that can be provided here the better.
-### Naming
-Repository names should have unique, all lower-case names with words separated by hyphen/dashes. Ideally repo names should be as semantic as possible. 
-Examples: 
-* `repo`
-* `my-repo`
-* `my-more-complex-repo`
-
-## Topic tags
-
-To help with discoverability, all the repositories in the ACCESS-NRI GitHub organisation must use appropriate topic tags. For a list of all topics tags and a detailed explanation on how to use them, see the corresponding [section](managing-repositories.md#topic-tags).
-
 ## Branches
 ### Permanent branches
 Permanent branches should contain two default branches:
@@ -99,25 +85,6 @@ For more information, refer to [Git configuration documentation](https://git-scm
 
 
 
-
-## Github
-All <i>direct</i> Github actions (e.g. repo creation, naming etc) follow the [Git style guide](#git) above.
-
-* Use the anu.edu.au email address for your commits
-* Enable [two-factor authentication](#two-factor-authentication)
-* Enable [commit signing](#signed-commits)
-
-## Two-factor Authentication
-
-Two-factor authentication is an important security measure to protect your account and all ACCESS-NRI Staff must enable it. Outside contributors with write access to ACCESS-NRI Organisation repos are also required to enable 2FA.
-
-There is [extensive GitHub documentation covering how to enable 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication).
-
-Some notes:
-
-- It is a good idea to configure more than one 2FA method in case you lose access
-- Both BitWarden and Microsoft Authenticator are TOTP apps that are already in use by many in the organisation
-- The GitHub Mobile app is also a convenient 2FA method
 
 ## Pull Requests
 ### Reviewers

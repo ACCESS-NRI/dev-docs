@@ -23,7 +23,11 @@ edit_uri: edit/main/documentation/docs
 nav:
   - Policies:
     - Acknowledging code contributions: pages/policies/acknowledging-contributions.md
+    - GitHub accounts: pages/policies/github-accounts.md
+    - GitHub Actions: pages/policies/github-actions.md
     - Licensing: pages/policies/licensing.md
+    - Repository management: pages/policies/repository-management.md
+    - Topic tags: pages/policies/topic-tags.md
   - Guidelines:
     - Code: pages/guidelines/code.md
     - Design review: pages/guidelines/design-review.md
