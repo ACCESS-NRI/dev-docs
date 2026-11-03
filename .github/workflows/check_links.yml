@@ -1,0 +1,20 @@
+# =========== IMPORTANT!! READ THIS!! ============ #
+# This file is used to check links and can be copied to be used for documentation websites.
+# ============================================== #
+
+name: Check links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    uses: access-nri/documentation-infra/.github/workflows/check_links_workflow.yml@v0.3
+    with:
+      repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+      commit: ${{ github.event.pull_request.head.sha || github.sha }}
+      rtd_project: 'access-nri-dev-docs'
