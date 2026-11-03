@@ -1,3 +1,6 @@
+!!! info "Policy status"
+    **Status:** moved from the wiki; formal approval not recorded.
+
 ## Actions Versioning
 
 When we use actions and reusable workflows in GitHub Actions, we require certain levels of strictness for the version. 

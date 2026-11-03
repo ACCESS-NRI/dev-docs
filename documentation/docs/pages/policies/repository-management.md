@@ -1,3 +1,6 @@
+!!! info "Policy status"
+    **Status:** agreed by the GitHub Management Group in [dev-docs#40](https://github.com/ACCESS-NRI/dev-docs/issues/40) (November 2025) and [dev-docs#41](https://github.com/ACCESS-NRI/dev-docs/issues/41) (April 2026).
+
 ACCESS-NRI manages two GitHub organisations: 
  - [ACCESS-NRI](https://github.com/ACCESS-NRI)
  - [ACCESS Community Hub](https://github.com/ACCESS-Community-Hub/)

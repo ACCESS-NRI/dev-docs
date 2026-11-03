@@ -1,3 +1,6 @@
+!!! warning
+    This process has not been finalised: the approval conditions (step 4) are not defined.
+
 ## Design review
 
 All software architecture decisions must go through an internal design review process.

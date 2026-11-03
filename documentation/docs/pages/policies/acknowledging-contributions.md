@@ -1,3 +1,6 @@
+!!! info "Policy status"
+    **Status:** written in March 2025 after consultation with team leads ([dev-docs#19](https://github.com/ACCESS-NRI/dev-docs/issues/19)); formal approval not recorded.
+
 ## Scope
 How we will recognise and manage software contributions at ACCESS-NRI.
 

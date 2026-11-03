@@ -1,3 +1,6 @@
+!!! info "Policy status"
+    **Status:** developed in GitHub Management Group meetings ([dev-docs#37](https://github.com/ACCESS-NRI/dev-docs/issues/37)); formal approval not recorded.
+
 To help with discoverability, all the repositories in the ACCESS-NRI GitHub organisation must use appropriate topic tags.
 
 ## Introduction

@@ -1,3 +1,6 @@
+!!! info "Policy status"
+    **Status:** moved from the wiki; formal approval not recorded. Commit signing was discussed in [dev-docs#23](https://github.com/ACCESS-NRI/dev-docs/issues/23) and [dev-docs#41](https://github.com/ACCESS-NRI/dev-docs/issues/41).
+
 * Use the anu.edu.au email address for your commits
 * Enable [two-factor authentication](#two-factor-authentication)
 * Enable [commit signing](../documentation/git-setup.md#signed-commits)

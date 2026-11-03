@@ -22,6 +22,7 @@ edit_uri: edit/main/documentation/docs
 # Navigation 
 nav:
   - Policies:
+    - pages/policies/index.md
     - Acknowledging code contributions: pages/policies/acknowledging-contributions.md
     - GitHub accounts: pages/policies/github-accounts.md
     - GitHub Actions: pages/policies/github-actions.md
@@ -29,12 +30,14 @@ nav:
     - Repository management: pages/policies/repository-management.md
     - Topic tags: pages/policies/topic-tags.md
   - Guidelines:
+    - pages/guidelines/index.md
     - Code: pages/guidelines/code.md
     - Design review: pages/guidelines/design-review.md
     - Git and GitHub: pages/guidelines/git-and-github.md
     - Spack packages: pages/guidelines/spack-packages.md
     - Versioning: pages/guidelines/versioning.md
   - Documentation:
+    - pages/documentation/index.md
     - Asset schema: pages/documentation/asset-schema.md
     - Binary libraries: pages/documentation/binary-libraries.md
     - CI/CD: pages/documentation/ci-cd.md
