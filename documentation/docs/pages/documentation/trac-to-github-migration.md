@@ -1,18 +1,18 @@
 This page and documents the process for migration of Trac to GitHub, focusing on the migration of CABLE Trac tickets to GitHub issues, using [IETF-Ribose Tractive](https://github.com/ietf-ribose/tractive).
 
 The full process is only partially documented at https://github.com/ietf-ribose/tractive with some necessary details missing. In summary, the full process is:
-1. [Obtain all necessary permissions](Trac-to-GitHub-migration#1-permissions).
-1. [Set up communications between the migration host, the Trac server host, and GitHub](Trac-to-GitHub-migration#2-communications).
-1. [Set up a Conda environment and install all the required software](Trac-to-GitHub-migration#3-software). 
-1. [Use Reposurgeon to migrate the Subversion repository to Git](Trac-to-GitHub-migration#4-reposurgeon).
-1. [Build the SVN Revision to Git Commit RevMap](Trac-to-GitHub-migration#5-revmap).
-1. [Create the GitHub repository and grant permissions to relevant users](Trac-to-GitHub-migration#6-repository).
-1. [Bootstrap the Tractive config file](Trac-to-GitHub-migration#7-bootstrapping).
-1. [Create a Trac to GitHub user map](Trac-to-GitHub-migration#8-User-Map).
-1. [Configure the Tractive config file](Trac-to-GitHub-migration#9-Configuration).
-1. [Run Tractive](Trac-to-GitHub-migration#10-running-tractive).
-1. [Filter the local Git repository](Trac-to-GitHub-migration#11-git-repository-filtering).
-1. [Upload the local Git repository to GitHub](Trac-to-GitHub-migration/#12-uploading-the-git-repository-to-github).
+1. [Obtain all necessary permissions](#1-permissions).
+1. [Set up communications between the migration host, the Trac server host, and GitHub](#2-communications).
+1. [Set up a Conda environment and install all the required software](#3-software). 
+1. [Use Reposurgeon to migrate the Subversion repository to Git](#4-reposurgeon).
+1. [Build the SVN Revision to Git Commit RevMap](#5-revmap).
+1. [Create the GitHub repository and grant permissions to relevant users](#6-repository).
+1. [Bootstrap the Tractive config file](#7-bootstrapping).
+1. [Create a Trac to GitHub user map](#8-user-map).
+1. [Configure the Tractive config file](#9-configuration).
+1. [Run Tractive](#10-running-tractive).
+1. [Filter the local Git repository](#11-git-repository-filtering).
+1. [Upload the local Git repository to GitHub](#12-uploading-the-git-repository-to-github).
 
 These steps are described in more detail below.
 
@@ -706,7 +706,7 @@ The problem in this case is that the names provided in `current_cable_users.txt`
    $ wc -l extra_cable_users.txt 
    127 extra_cable_users.txt
    ```
-1. Edit the `current_cable_users.clean.txt` file produced in [4 Reposurgeon](Trac-to-GitHub-migration#4-Reposurgeon) Step 5 to produce the file `current_cable_users.github.txt`, by changing the names of members of the `CABLE-LSM` `dev` team to their GitHub names. The differences are as follows.
+1. Edit the `current_cable_users.clean.txt` file produced in [4 Reposurgeon](#4-reposurgeon) Step 5 to produce the file `current_cable_users.github.txt`, by changing the names of members of the `CABLE-LSM` `dev` team to their GitHub names. The differences are as follows.
    ```
    $ diff -y --suppress-common-lines current_cable_users.clean.txt current_cable_users.github.txt
    ab7412 = Alison Bennett                                       | ab7412 = Alison C Bennett
@@ -788,7 +788,7 @@ Examples:
 
 ## 11. Git repository filtering
 
-If an attempt is made to upload to GitHub the `cable-git` repository that was created by running the Resposurgeon `make` as per [Section 4](Trac-to-GitHub-migration#4-reposurgeon) above, this is likely to fail because some blobs are too large for GitHub. The repository, including its entire hsitory, needs to be filtered to remove these large blobs.
+If an attempt is made to upload to GitHub the `cable-git` repository that was created by running the Resposurgeon `make` as per [Section 4](#4-reposurgeon) above, this is likely to fail because some blobs are too large for GitHub. The repository, including its entire hsitory, needs to be filtered to remove these large blobs.
 
 1. Run the following commands in the `/g/data/tm70/pcl851/tractive/cable-trac-github` directory on Gadi login.
    ```
