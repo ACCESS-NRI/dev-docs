@@ -31,6 +31,8 @@ nav:
   - Guidelines:
     - Code: pages/guidelines/code.md
     - Design review: pages/guidelines/design-review.md
+    - Git and GitHub: pages/guidelines/git-and-github.md
+    - Spack packages: pages/guidelines/spack-packages.md
     - Versioning: pages/guidelines/versioning.md
   - Documentation:
     - Asset schema: pages/documentation/asset-schema.md
