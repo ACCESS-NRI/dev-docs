@@ -207,7 +207,7 @@ The following topics where used in the past, but should not be used anymore:
 
 ### Repository administrators
 
-As stated in the [GitHub management policy](https://github.com/ACCESS-NRI/dev-docs/wiki/GitHub-Organizations#repository-management-policies), each repository must have at least two individual administrators. These cannot be teams and there needs to be a very compelling reason for an external user to be made an administrator. The organisation administrators must validate the reason to add an external user as a repository administrator.
+As stated in the [GitHub management policy](#repository-management-policies), each repository must have at least two individual administrators. These cannot be teams and there needs to be a very compelling reason for an external user to be made an administrator. The organisation administrators must validate the reason to add an external user as a repository administrator.
 
 ### User permissions
 
@@ -231,7 +231,7 @@ At a minimum, the default branch of a public repository should always be protect
 
 ### Topics
 
-All repositories should be tagged with [the appropriate topics](https://github.com/ACCESS-NRI/dev-docs/wiki/GitHub-Organizations#topic-tags) for better discoverability.
+All repositories should be tagged with [the appropriate topics](#topic-tags) for better discoverability.
 
 ### Security Settings
 

@@ -12,7 +12,7 @@ Examples:
 
 ## Topic tags
 
-To help with discoverability, all the repositories in the ACCESS-NRI GitHub organisation must use appropriate topic tags. For a list of all topics tags and a detailed explanation on how to use them, see the corresponding [section](https://github.com/ACCESS-NRI/dev-docs/wiki/GitHub-Organizations#topic-tags).
+To help with discoverability, all the repositories in the ACCESS-NRI GitHub organisation must use appropriate topic tags. For a list of all topics tags and a detailed explanation on how to use them, see the corresponding [section](managing-repositories.md#topic-tags).
 
 ## Branches
 ### Permanent branches
@@ -101,7 +101,7 @@ For more information, refer to [Git configuration documentation](https://git-scm
 
 
 ## Github
-All <i>direct</i> Github actions (e.g. repo creation, naming etc) follow the [Git style guide](https://github.com/ACCESS-NRI/dev-docs/wiki/Git-and-Github#git) above.
+All <i>direct</i> Github actions (e.g. repo creation, naming etc) follow the [Git style guide](#git) above.
 
 * Use the anu.edu.au email address for your commits
 * Enable [two-factor authentication](#two-factor-authentication)

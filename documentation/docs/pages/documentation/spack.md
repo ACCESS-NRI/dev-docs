@@ -197,7 +197,7 @@ The OpenMPI SPR contains the mapping of MPI standard to OpenMPI implementation:
 
 ## Versioning Working Practice
 
-See [related design document](https://github.com/ACCESS-NRI/dev-docs/wiki/Decision-Documents#spack-versioning).
+See [related design document](decision-documents.md#spack-versioning).
 
 ### Guidelines
 
@@ -354,7 +354,7 @@ Decisions regarding changing the source package's build system are subjective an
 
 Compiler flags can be set in the Spack environment file, the SPR and/or the source package's build system.
 
-Generally, compiler flags should *not* be set in the Spack environment file (`spack.yaml`), unless it is for debugging or experimental purposes. This functionality should only be used by advanced Spack users because it can be complicated to verify that the compiler flags have been applied. For more details, please read: https://github.com/ACCESS-NRI/dev-docs/wiki/Spack#compiler-flag-override . The `inject_flags` option is the default `flag_handler`: https://spack.readthedocs.io/en/latest/packaging_guide_build.html#compiler-flags . This means that CMake and Autotools based SPRs need to set the `flag_handler` to `build_system_flags` in-order for compiler flag overrides to appear in the build logs. Otherwise, they only appear in the Spack debug build logs when `spack -d install` is run.
+Generally, compiler flags should *not* be set in the Spack environment file (`spack.yaml`), unless it is for debugging or experimental purposes. This functionality should only be used by advanced Spack users because it can be complicated to verify that the compiler flags have been applied. For more details, please read: [Compiler Flag Override](#compiler-flag-override). The `inject_flags` option is the default `flag_handler`: https://spack.readthedocs.io/en/latest/packaging_guide_build.html#compiler-flags . This means that CMake and Autotools based SPRs need to set the `flag_handler` to `build_system_flags` in-order for compiler flag overrides to appear in the build logs. Otherwise, they only appear in the Spack debug build logs when `spack -d install` is run.
 
 SPRs can contain compiler flags that are applied to the source package. In particular, an SPR may have a variant that modifies the source package's compiler flags. e.g. A variant for `deterministic` builds. For more details on variants, please read: https://spack.readthedocs.io/en/latest/packaging_guide_creation.html#variants . The way to use variants with CMake are documented with: https://spack.readthedocs.io/en/latest/build_systems/cmakepackage.html . The Model Release team can provide advice on appropriate defaults for variants.
 

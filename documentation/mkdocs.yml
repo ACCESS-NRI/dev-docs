@@ -21,28 +21,31 @@ edit_uri: edit/main/documentation/docs
 
 # Navigation 
 nav:
-  - Contribution guidelines: pages/ACCESS‐NRI-acknowledging-code-contributions-guidelines.md
-  - Asset schema: pages/Asset-schema.md
-  - Binary libraries: pages/Binary-Libraries.md
-  - CMake: pages/CMake.md
-  - Code guidelines: pages/Code-guidelines.md
-  - Communication channels: pages/Communication-channels.md
-  - CI/CD: pages/Continuous-Integration-and-Deployment.md
-  - Creating Python packages: pages/Creating-Python-Packages.md
-  - Debugging access-spack-packages CI with tmate: pages/Debugging-access‐spack‐packages-CI-with-tmate.md
-  - Decision documents: pages/Decision-Documents.md
-  - Design review: pages/Design-review.md
-  - Environments: pages/Environments.md
-  - Git and GitHub: pages/Git-and-Github.md
-  - GitHub organizations: pages/GitHub-Organizations.md
-  - Licensing: pages/Licensing.md
-  - MOSRS: pages/MOSRS.md
-  - Read the Docs information: pages/Readthedocs-information.md
-  - Release management: pages/Release-management.md
-  - Software copyright and licenses: pages/Software-Copyright-and-Licenses.md
-  - Spack: pages/Spack.md
-  - Trac to GitHub migration: pages/Trac-to-GitHub-migration.md
-  - Versioning: pages/Versioning.md
+  - Policies:
+    - Acknowledging code contributions: pages/policies/acknowledging-contributions.md
+    - Licensing: pages/policies/licensing.md
+  - Guidelines:
+    - Code: pages/guidelines/code.md
+    - Design review: pages/guidelines/design-review.md
+    - Versioning: pages/guidelines/versioning.md
+  - Documentation:
+    - Asset schema: pages/documentation/asset-schema.md
+    - Binary libraries: pages/documentation/binary-libraries.md
+    - CI/CD: pages/documentation/ci-cd.md
+    - CMake: pages/documentation/cmake.md
+    - Creating Python packages: pages/documentation/creating-python-packages.md
+    - Debugging access-spack-packages CI with tmate: pages/documentation/debugging-access-spack-packages-ci-with-tmate.md
+    - Decision documents: pages/documentation/decision-documents.md
+    - Environments: pages/documentation/environments.md
+    - Git setup: pages/documentation/git-setup.md
+    - Managing repositories: pages/documentation/managing-repositories.md
+    - Momentum Partnership channels: pages/documentation/momentum-partnership-channels.md
+    - MOSRS: pages/documentation/mosrs.md
+    - Read the Docs: pages/documentation/readthedocs.md
+    - Release management: pages/documentation/release-management.md
+    - Software copyright and licenses: pages/documentation/software-copyright-and-licenses.md
+    - Spack: pages/documentation/spack.md
+    - Trac to GitHub migration: pages/documentation/trac-to-github-migration.md
 
 
 # Theme configuration
